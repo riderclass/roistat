@@ -698,7 +698,7 @@ section {
   }
 }
 
-@media (min-width: 360px) and (max-width: 767.98px) {
+@media (max-width: 360px) {
   .elipse {
       right: -600px;
       top: -170%;
@@ -846,7 +846,7 @@ section {
 
   .modal {
       position: fixed;
-      top: 40%;
+      top: 44%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 75%;
@@ -867,5 +867,10 @@ section {
       .send_btn {
           width: 99%;
       }
+      .custom-cb {
+        display: inline-block;
+        width: 95px;
+        height: 16px;
   }
+}
 }
