@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roistat Black Friday</title>
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <script type="module" src="/js/scripts.js"></script>
+</head>
+<body>
+  <div class="elipse"></div>
+  <section>
+    <header>
+      <div class="logo"><a href="/"><img src="/img/logo.png" alt="" /></a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Наши предложения</a></li>
+          <li><a href="#">Цены</a></li>
+        </ul>
+      </div>
+      <div class="sandwich_menu">
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+  <div class="star_box">
+    <div class="star">
+      <img src="/img/star.png" alt="" />
+    </div>
+  </div>
+  <div class="black_word">
+    <div class="stick1">
+      <img src="/img/stick1.png" alt="" />
+    </div>
+    <div class="stick2">
+      <img src="/img/stick2.png" alt="" />
+    </div>
+    <h1>черная</h1>
+  </div>
+  <div class="friday_word">
+    <h1>пятница</h1>
+    <img src="/img/sale.png" alt="" />
+  </div>
+
+  <div class="form_box">
+    <p>Воспользуйтесь выгодными предложениями от Roistat в ноябре*</p>
+    <button class="js-open-modal" data-modal="pop1"><span>Получить выгоду</span><img src="/img/arrow-right.png" alt="" /></button>
+  </div>
+</section>
+
+<div class="lines_box">
+  <div class="lines">
+    <img class="line1" src="/img/line1.png" alt="" />
+    <img class="line2" src="/img/line2.png" alt="" />
+  </div>
+</div>
+
+<div class="promo_text">
+  *Акция не распространяется на подключение опций, лимитов, которые были подключены ранее до 1.11.2023 Количество предложений ограничено
+</div>
+
+<div class="modal js-modal" data-modal="pop1">
+  <div class="header_modal">
+    <h2 class="title">Регистрация</h2>
+    <div class="cross_box">
+      <svg class="modal__cross js-modal-close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.0014 8L16 14L10 8L8 10L14 16L8 22L10 24L16 18L22.0014 24L24.0014 22L18.0014 16L24.0014 10L22.0014 8Z" fill="#F0F0F0"/>
+      </svg>
+    </div>
+  </div>
+
+  <form onsubmit="return checkform()" name="myForm" action="/form/process_form.php" method="post">
+    <input id="name" name="name" placeholder="Ваше имя" type="text" />
+    <input id="company" name="company" placeholder="Сайт компании" type="text" />
+    <input placeholder="Телефон" name="telephone" class="form-control db" type="text" id="telephone">
+    <div id="error_box" class="hide"></div>
+    <input type="submit" name="Enter" value="Получить код" class="send_btn" />
+    <div class="policy_box">
+      <input type="checkbox" name="policy" value="yes" id="cb" hidden />
+      <label for="cb" class="custom-cb"></label>
+      <p class="small-text">Отправляя сведения через электронную форму, вы даете согласие на обработку персональных данных, в том числе сбор, хранение и передачу третьим лицам представленной вами информации на условиях <a href="/">Политики обработки персональных данных</a>.</p>
+    </div>  
+  </form>
+</div>
+
+<script src='/js/jquery.min.js'></script>
+<script  src="/modal/modal.js"></script>
+<script  src="/js/scripts.js"></script>
+</body>
+</html>
